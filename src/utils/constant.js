@@ -1,0 +1,1 @@
+export const ROUTER_URL = '__router_url__'
