@@ -1,6 +1,12 @@
 # react 简单demo
 
-- hook使用
+## hook使用
+
+### 规则
+  - 只在最顶层使用Hook
+    不在条件、循环和嵌套函数中使用Hook，保证Hook的执行顺序
+  - 只在react函数中使用Hook
+
 
 - module.scss 样式隔离
 

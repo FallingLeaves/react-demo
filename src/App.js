@@ -9,8 +9,10 @@ import Menu from './components/menu'
 import Tabs from './components/tabs'
 import Slider from './components/slider'
 import Lorem from './components/lorem-ipsum'
+import ColorGenerator from './components/color-generator'
+import Grocery from './components/grocery-bud'
 
-import { ComponentApp } from "./components";
+// import { ComponentApp } from "./components";
 
 const Home = () => {
   return (
@@ -20,21 +22,21 @@ const Home = () => {
   )
 }
 
-const components = []
+// const components = []
 
-Object.entries(ComponentApp).forEach(([url, component]) => {
-  components.push({
-    url,
-    component
-  })
-})
+// Object.entries(ComponentApp).forEach(([url, component]) => {
+//   components.push({
+//     url,
+//     component
+//   })
+// })
 
-components.unshift({
-  url: '/',
-  component: Home
-})
+// components.unshift({
+//   url: '/',
+//   component: Home
+// })
 
-console.log(components);
+// console.log(components);
 
 
 class App extends Component {
@@ -50,6 +52,8 @@ class App extends Component {
         <Link to="/tabs">Tabs</Link>
         <Link to="/slider">Slider</Link>
         <Link to="/lorem">Lorem</Link>
+        <Link to="/color">Color Generator</Link>
+        <Link to="/grocery">Grocery</Link>
         <hr></hr>
         <Routes>
           <Route path="/" exact element={<Home />}></Route>
@@ -61,6 +65,8 @@ class App extends Component {
           <Route path="/tabs" element={<Tabs />}></Route>
           <Route path="/slider" element={<Slider />}></Route>
           <Route path="/lorem" element={<Lorem />}></Route>
+          <Route path="/color" element={<ColorGenerator />}></Route>
+          <Route path="/grocery" element={<Grocery />}></Route>
         </Routes>
       </div>
     )
