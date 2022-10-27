@@ -11,6 +11,10 @@ import Slider from './components/slider'
 import Lorem from './components/lorem-ipsum'
 import ColorGenerator from './components/color-generator'
 import Grocery from './components/grocery-bud'
+import Navbar from "./components/navbar";
+import SidebarApp from "./components/sidebar-modal";
+import SubmenuApp from "./components/submenu";
+import CartApp from "./components/cart";
 
 // import { ComponentApp } from "./components";
 
@@ -54,6 +58,10 @@ class App extends Component {
         <Link to="/lorem">Lorem</Link>
         <Link to="/color">Color Generator</Link>
         <Link to="/grocery">Grocery</Link>
+        <Link to="/navbar">Navbar</Link>
+        <Link to="/sidebar">Sidebar modal</Link>
+        <Link to="/submenu">Submenu</Link>
+        <Link to="/cart">Cart</Link>
         <hr></hr>
         <Routes>
           <Route path="/" exact element={<Home />}></Route>
@@ -67,6 +75,10 @@ class App extends Component {
           <Route path="/lorem" element={<Lorem />}></Route>
           <Route path="/color" element={<ColorGenerator />}></Route>
           <Route path="/grocery" element={<Grocery />}></Route>
+          <Route path="/navbar" element={<Navbar />}></Route>
+          <Route path="/sidebar" element={<SidebarApp />}></Route>
+          <Route path="/submenu" element={<SubmenuApp />}></Route>
+          <Route path="/cart" element={<CartApp />}></Route>
         </Routes>
       </div>
     )
