@@ -15,6 +15,10 @@ import Navbar from "./components/navbar";
 import SidebarApp from "./components/sidebar-modal";
 import SubmenuApp from "./components/submenu";
 import CartApp from "./components/cart";
+import MarkdownPreview from "./components/markdown-preview";
+import RandomuserApp from "./components/random-person";
+import PaginateApp from "./components/pagination";
+import ThemeApp from "./components/dark-mode";
 
 // import { ComponentApp } from "./components";
 
@@ -62,6 +66,10 @@ class App extends Component {
         <Link to="/sidebar">Sidebar modal</Link>
         <Link to="/submenu">Submenu</Link>
         <Link to="/cart">Cart</Link>
+        <Link to="/markdown">Markdown</Link>
+        <Link to="/random">Random user</Link>
+        <Link to="/paginate">Pagiante</Link>
+        <Link to="/theme">Theme</Link>
         <hr></hr>
         <Routes>
           <Route path="/" exact element={<Home />}></Route>
@@ -79,6 +87,10 @@ class App extends Component {
           <Route path="/sidebar" element={<SidebarApp />}></Route>
           <Route path="/submenu" element={<SubmenuApp />}></Route>
           <Route path="/cart" element={<CartApp />}></Route>
+          <Route path="/markdown" element={<MarkdownPreview />}></Route>
+          <Route path="/random" element={<RandomuserApp />}></Route>
+          <Route path="/paginate" element={<PaginateApp />}></Route>
+          <Route path="/theme" element={<ThemeApp />}></Route>
         </Routes>
       </div>
     )
