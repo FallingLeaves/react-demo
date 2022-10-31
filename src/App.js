@@ -19,6 +19,8 @@ import MarkdownPreview from "./components/markdown-preview";
 import RandomuserApp from "./components/random-person";
 import PaginateApp from "./components/pagination";
 import ThemeApp from "./components/dark-mode";
+import NewsApp from "./components/hacker-news";
+import QuizApp from "./components/quiz";
 
 // import { ComponentApp } from "./components";
 
@@ -70,6 +72,8 @@ class App extends Component {
         <Link to="/random">Random user</Link>
         <Link to="/paginate">Pagiante</Link>
         <Link to="/theme">Theme</Link>
+        <Link to="/news">News</Link>
+        <Link to="/quiz">Quiz</Link>
         <hr></hr>
         <Routes>
           <Route path="/" exact element={<Home />}></Route>
@@ -91,6 +95,8 @@ class App extends Component {
           <Route path="/random" element={<RandomuserApp />}></Route>
           <Route path="/paginate" element={<PaginateApp />}></Route>
           <Route path="/theme" element={<ThemeApp />}></Route>
+          <Route path="/news" element={<NewsApp />}></Route>
+          <Route path="/quiz" element={<QuizApp />}></Route>
         </Routes>
       </div>
     )
